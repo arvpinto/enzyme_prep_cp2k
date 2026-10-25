@@ -1,7 +1,46 @@
 title: Tutorial for the Preparation of Enzyme QM/MM Systems for CP2K
 description: From a PDB structure to a validated QM/MM model of an enzyme-ligand complex (Amber force field, CP2K)
-show_downloads: true
-google_analytics:
-remote_theme: pages-themes/cayman@v0.2.0
+author: Alexandre V. Pinto
+lang: en
+image: /assets/img/CP2K_PREP_TUTORIAL.png
+
+# Shown at the top of the main page of the tutorial.
+topic: QM/MM
+topic_color: "#ff5257"
+series: Part 1 of Enzyme QM/MM with CP2K
+tools: [AmberTools, parmed, VMD, CP2K]
+next_tutorial:
+  title: Static QM/MM (TS searches with CI-NEB and the dimer method)
+  url: https://arvpinto.github.io/enzyme_neb_cp2k/
+
+# Pages of the tutorial, in reading order. They build the "Sections" menu and
+# the Previous / Next links at the bottom of every page.
+sections:
+  - title: Overview
+    url: /
+  - num: I
+    title: System setup
+    url: /enzyme_qmmm_prep_I.html
+  - num: II
+    title: MD equilibration
+    url: /enzyme_qmmm_prep_II.html
+  - num: III
+    title: QM region
+    url: /enzyme_qmmm_prep_III.html
+  - num: IV
+    title: QM/MM input
+    url: /enzyme_qmmm_prep_IV.html
+  - num: V
+    title: Charge correction
+    url: /enzyme_qmmm_prep_V.html
+  - num: VI
+    title: CP2K tests
+    url: /enzyme_qmmm_prep_VI.html
+
+# Main site (CompBioChem Tutorials) and this repository.
+home_url: https://arvpinto.github.io/
+repo_url: https://github.com/arvpinto/enzyme_qmmm_prep_cp2k
+
+# The pages use their own layout and stylesheet (no remote theme), matching the main site.
 plugins:
-- jekyll-remote-theme
+  - jekyll-seo-tag
